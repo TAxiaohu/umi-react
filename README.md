@@ -15,15 +15,14 @@ $ npm start or yarn install or npx umi dev
 
 - 其他常用命令
 ```
-| 命令            | 作用&效果          |
-| --------------- | ------------- |
-| $ npm run build:dev or yarn build:dev | 打包用于测试环境(dev)代码 |
-| $ npm run build:prod or yarn build:prod | 打包用于生产环境(prod)代码 |
-| $ umi g page <page> or npx umi g page <page> | 在src/pages/ 添加页面 |
+|命令|作用&效果|
+|:-|:-:|-:|
+|$ npm run build:dev or yarn build:dev|打包用于测试环境(dev)代码|
+|$ npm run build:prod or yarn build:prod|打包用于生产环境(prod)代码|
+|$ umi g page <page> or npx umi g page <page>|在src/pages/ 添加页面|
 ```
 
 ## 目录结构
--
   ```
     ├─config # webpack && umi 配置目录
     └─
