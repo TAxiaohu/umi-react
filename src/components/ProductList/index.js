@@ -9,7 +9,7 @@ export default class index extends Component {
       dataIndex: 'name',
     }, {
       title: 'Actions',
-      render: (text, record) => {
+      render: (text,record) => {
         return (
           <Popconfirm title="Delete?" onConfirm={() => onDelete(record.id)}>
             <Button>Delete</Button>
