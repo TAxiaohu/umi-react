@@ -24,26 +24,16 @@ $ npm start or yarn install or npx umi dev
 
 ## 目录结构
   ```
-    + config/ # webpack && umi 配置目录
-        + config.js 开发环境配置
-        + config.prod.js 生产环境配置
-    + mock/ # mock 测试数据目录
-    + node_modules/ # npm管理的所有包及其依赖
-    + dist # 编译后生成的所有代码、资源
-    + src/ # 当前项目源码，开发都在此目录
-        + assets/ # 静态资源文件目录
-        + components/ # 公用组件目录
-        + layouts/ # 布局组件目录
-        + models/ # 
-  ```
-  ```
     ├── dist/                          // 默认的 build 输出目录
     ├── mock/                          // mock 文件所在目录，基于 express
-    ├── config/
+    ├── config/                        // umi 配置目录
         ├── config.js                  // umi dev 配置
+        ├── router.config.js           // router 配置
         └── config.prod.js             // umi 生产配置
     └── src/                           // 源码目录，可选
-        ├── layouts/index.js           // 全局布局
+        ├── layouts/                   // 布局文件目录
+        ├── components/                // 全局组件目录
+        ├── models/                    // redux目录
         ├── pages/                     // 页面目录，里面的文件即路由
             ├── .umi-production/       // build 临时目录，会自动删除
             ├── document.ejs           // HTML 模板
