@@ -1,3 +1,6 @@
+import routerConfig from "./router.config";
+import themeConfig from "./theme-config";
+
 export default {
   treeShaking: true,
   plugins: [
@@ -19,4 +22,6 @@ export default {
       },
     }],
   ],
+  routes: routerConfig,
+  theme: {...themeConfig}
 }

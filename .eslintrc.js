@@ -10,6 +10,8 @@ module.exports = {
     jasmine: true,
   },
   rules: {
+    'react/sort-comp': [0],
+    'class-methods-use-this': [0],
     'generator-star-spacing': [0],
     'consistent-return': [0],
     'react/forbid-prop-types': [0],

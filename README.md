@@ -29,11 +29,15 @@ $ npm start or yarn install or npx umi dev
     ├── config/                        // umi 配置目录
         ├── config.js                  // umi dev 配置
         ├── router.config.js           // router 配置
+        ├── theme.config.js            // 主题 配置
         └── config.prod.js             // umi 生产配置
     └── src/                           // 源码目录，可选
         ├── layouts/                   // 布局文件目录
+        ├── common/                    // 公共配置
         ├── components/                // 全局组件目录
         ├── models/                    // redux目录
+        ├── services/                  // api配置
+        ├── util/                      // 工具配置
         ├── pages/                     // 页面目录，里面的文件即路由
             ├── .umi-production/       // build 临时目录，会自动删除
             ├── document.ejs           // HTML 模板
@@ -45,5 +49,7 @@ $ npm start or yarn install or npx umi dev
         ├── global.js                  // 可以在这里加入 polyfill
         ├── app.js                     // 运行时配置文件config.js，二选一
     ├── .env                           // 环境变量
+    ├── .eslintrc                      // eslint 配置
+    ├── .eslintignore                  // eslint忽略配置
     └── package.json
   ```
