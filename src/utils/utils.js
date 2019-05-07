@@ -15,3 +15,19 @@ const reg = /(((^https?:(?:\/\/)?)(?:[-;:&=\+\$,\w]+@)?[A-Za-z0-9.-]+(?::\d+)?|(
 export function isUrl(path) {
   return reg.test(path);
 }
+
+export function flattenRouter(arr) {
+  const res = [];
+  arr.forEach(item => {
+    if (item.routes) {
+      const route = flattenRouter(item.routes);
+      res.push(item)
+      route.forEach(i => {
+        res.push(i);
+      })
+    } else {
+      res.push(item);
+    }
+  });
+  return res;
+}

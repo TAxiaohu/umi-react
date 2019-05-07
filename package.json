@@ -27,6 +27,7 @@
     "react-document-title": "^2.0.3",
     "react-dom": "^16.7.0",
     "react-media": "^1.9.2",
+    "react-router-breadcrumbs-hoc": "^3.2.0",
     "stylelint-config-prettier": "^5.1.0",
     "stylelint-config-standard": "^18.3.0"
   },

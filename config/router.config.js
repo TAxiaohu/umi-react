@@ -23,12 +23,12 @@ export default [
       },
       {
         path: '/product',
-        name: 'product',
+        name: '商品管理',
         icon: 'user',
         routes: [
           {
             path: '/product/list',
-            name: 'product',
+            name: '商品列表',
             component: './products',
           }
         ]

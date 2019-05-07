@@ -5,5 +5,4 @@ module.exports = {
   theme: 'light', // 菜单 主题颜色 light || dark 默认dark
   title: 'umi react', // 菜单 头部名称
   iconfontUrl: '',
-  primaryColor: '#1890ff',
 }
