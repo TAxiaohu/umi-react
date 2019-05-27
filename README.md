@@ -53,3 +53,8 @@ $ npm start or yarn install or npx umi dev
     ├── .eslintignore                  // eslint忽略配置
     └── package.json
   ```
+
+  ## 开发说明
+  ```
+    页面添加PageWrapper组件 才会有面包屑
+  ```

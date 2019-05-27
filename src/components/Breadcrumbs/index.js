@@ -14,7 +14,6 @@ const routes = newRoutes.map(i => ({
 class Breakcrumbs extends Component {
   render() {
     const { breadcrumbs } = this.props;
-    console.log(routes, breadcrumbs)
     return (
       <div style={{ marginBottom: 16 }}>
         <Breadcrumb>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "dva";
+import { Card } from "antd";
 import ProductList from "@/components/ProductList";
 import PageWrapper from "@/components/PageWrapper";
 
@@ -17,11 +18,12 @@ class products extends Component {
   }
 
   render() {
-    const { products:productsData } = this.props;
+    const { products: productsData } = this.props;
     return (
       <PageWrapper>
-        <h2>List of Products</h2>
-        <ProductList onDelete={this.handleDelete} products={productsData} />
+        <Card bordered={false} title="list">
+          <ProductList onDelete={this.handleDelete} products={productsData} />
+        </Card>
       </PageWrapper>
     );
   }
